@@ -9,8 +9,13 @@ Link to Gradio App: [https://huggingface.co/spaces/vipul2412/starGAN](url)
 
 Link to the Paper: [https://arxiv.org/pdf/1711.09020](url)
 
+## Dataset
+The training has been done on Celeb Face Dataset. The dataset can be found on kaggle. Put the images inside the data folder and change the directory in the ipynb file respectively. I ran the notebook in different interval in kaggle so make sure you change the directories as per your requirements.
+
 ## Training
-Just run the training ipynb notebook. 
+The Training has been done by selecting 5 classes - \['Black_Hair', 'Blonde_Hair', 'Brown_Hair', 'Male', 'Young'\] as well as 6 classes = \['Black_Hair', 'Pale_Skin', 'Brown_Hair', 'Male', 'Young','Eyeglasses',\]. You can change the attributes to change inside the Actual training cell by changing the arguments.
+
+Just run the training ipynb notebook. The Actual training cell contains the code for printing the outputs(image translation into 5 classes) from 5 randomly input image from the current batch as well as it saves the model weights at regular interval.
 
 ## Download the pre-trained model weights (.pth file)
 **Link (5 Classes):** [Download Here](https://drive.google.com/file/d/1e9zTyKw6xTrfmam1wtfjIXLd-HYhBeHj/view?usp=drive_link)
@@ -21,9 +26,9 @@ To use the pre-trained model you need to make necessary model and optimizer init
 log_dict = {
     'iteration': i + 1,
     'model_G_state_dict': G.state_dict(),
-    'model_D_state_dict': D.state.dict(),
+    'model_D_state_dict': D.state_dict(),
     'optimizer_G_state_dict': g_optimizer.state_dict(),
-    'optimizer_D_state_dict': d_optimizer.state.dict()
+    'optimizer_D_state_dict': d_optimizer.state_dict()
 }
 ```
 
