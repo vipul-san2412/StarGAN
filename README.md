@@ -1,22 +1,13 @@
 # StarGAN
 StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation
 The task of image-to-image translation is to change a particular aspect of a given image to another, e.g., changing the facial expression of a person from smiling to frowning or changing the similar looking animals like zebra to a horse or vice versa. Given training data from two different domains, these models learn to translate images from one domain to the other.
+
 The term attribute denotes a meaningful feature inherent in an image such as hair color, gender or age, and attribute value as a particular value of an attribute, e.g., black/blond/brown for hair color or male/female for gender. We further denote domain as a set of images sharing the same attribute value. For example, images of women can represent one domain while those of men represent another.
 (Cited from Paper)
 
 Link to Gradio App: [https://huggingface.co/spaces/vipul2412/starGAN](url)
-Link to the Paper: [https://arxiv.org/pdf/1711.09020](url)
 
-## Dependencies
-* [Python 3.5+](https://www.continuum.io/downloads)
-* [PyTorch 0.4.0](http://pytorch.org/)
-* [torchvision](https://pypi.org/project/torchvision/) 
-* [Pillow](https://pillow.readthedocs.io/en/stable/) 
-* [tensorboardX](https://pypi.org/project/tensorboardX/) 
-* [NumPy](https://numpy.org/) 
-* [pandas](https://pandas.pydata.org/)
-* [Matplotlib](https://matplotlib.org/) 
-* [IPython](https://ipython.readthedocs.io/en/stable/)
+Link to the Paper: [https://arxiv.org/pdf/1711.09020](url)
 
 ## Training
 Just run the training ipynb notebook. 
@@ -30,6 +21,16 @@ To use the pre-trained model you need to make necessary model and optimizer init
       'optimizer_G_state_dict': g_optimizer.state_dict(),\
       'optimizer_D_state_dict': d_optimizer.state_dict()}\
 
+## Dependencies
+* [Python 3.5+](https://www.continuum.io/downloads)
+* [PyTorch 0.4.0](http://pytorch.org/)
+* [torchvision](https://pypi.org/project/torchvision/) 
+* [Pillow](https://pillow.readthedocs.io/en/stable/) 
+* [tensorboardX](https://pypi.org/project/tensorboardX/) 
+* [NumPy](https://numpy.org/) 
+* [pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/) 
+* [IPython](https://ipython.readthedocs.io/en/stable/)
 
 ## Citation
 Original work is this [paper](https://arxiv.org/abs/1711.09020):
