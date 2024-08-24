@@ -5,9 +5,8 @@ The task of image-to-image translation is to change a particular aspect of a giv
 The term attribute denotes a meaningful feature inherent in an image such as hair color, gender or age, and attribute value as a particular value of an attribute, e.g., black/blond/brown for hair color or male/female for gender. We further denote domain as a set of images sharing the same attribute value. For example, images of women can represent one domain while those of men represent another.
 (Cited from Paper)
 
-Link to Gradio App: [https://huggingface.co/spaces/vipul2412/starGAN](url)
-
-Link to the Paper: [https://arxiv.org/pdf/1711.09020](url)
+- **Gradio App**: [https://huggingface.co/spaces/vipul2412/starGAN](https://huggingface.co/spaces/vipul2412/starGAN)
+- **Paper**: [https://arxiv.org/pdf/1711.09020](https://arxiv.org/pdf/1711.09020)
 
 ## Dataset
 The training has been done on Celeb Face Dataset. The dataset can be found on kaggle. Put the images inside the data folder and change the directory in the ipynb file respectively. I ran the notebook in different interval in kaggle so make sure you change the directories as per your requirements.
