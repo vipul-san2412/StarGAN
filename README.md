@@ -13,13 +13,19 @@ Link to the Paper: [https://arxiv.org/pdf/1711.09020](url)
 Just run the training ipynb notebook. 
 
 ## Download the pre-trained model weights (.pth file)
-Link(5_classes): [https://drive.google.com/file/d/1e9zTyKw6xTrfmam1wtfjIXLd-HYhBeHj/view?usp=drive_link](url)
-To use the pre-trained model you need to make necessary model and optimizer initializations, particulary a generator, discriminator and 2 Adam optimizers for each. (details can be seen in the python notebook). The structure of the .pth file looks like:
-  log_dict = {'iteration': i + 1, \
-      'model_G_state_dict': G.state_dict(),\
-      'model_D_state_dict': D.state_dict(),\
-      'optimizer_G_state_dict': g_optimizer.state_dict(),\
-      'optimizer_D_state_dict': d_optimizer.state_dict()}\
+**Link (5 Classes):** [Download Here](https://drive.google.com/file/d/1e9zTyKw6xTrfmam1wtfjIXLd-HYhBeHj/view?usp=drive_link)
+
+To use the pre-trained model you need to make necessary model and optimizer initializations, particulary a generator, discriminator and 2 Adam optimizers for each. (details can be seen in the python notebook).The structure of the `.pth` file is as follows:
+
+```python
+log_dict = {
+    'iteration': i + 1,
+    'model_G_state_dict': G.state_dict(),
+    'model_D_state_dict': D.state.dict(),
+    'optimizer_G_state_dict': g_optimizer.state_dict(),
+    'optimizer_D_state_dict': d_optimizer.state.dict()
+}
+```
 
 ## Dependencies
 * [Python 3.5+](https://www.continuum.io/downloads)
