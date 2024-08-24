@@ -7,6 +7,7 @@ The term attribute denotes a meaningful feature inherent in an image such as hai
 
 - **Paper**: [https://arxiv.org/pdf/1711.09020](https://arxiv.org/pdf/1711.09020)
 - **Gradio App**: [https://huggingface.co/spaces/vipul2412/starGAN](https://huggingface.co/spaces/vipul2412/starGAN)
+
 ![Gradio_App](samples/gradio.JPG)
 
 ## Dataset
